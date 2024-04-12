@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embedded Video</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    video {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        object-fit: contain; /* Ensures the video maintains its aspect ratio */
+    }
+</style>
+</head>
+<body>
+<video controls autoplay loop poster="poster_image.jpg">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+</body>
+</html>
